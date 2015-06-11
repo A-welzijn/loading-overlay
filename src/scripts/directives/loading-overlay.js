@@ -1,9 +1,9 @@
 'use strict';
 (function (module) {
   try {
-    module = angular.module('awelzijn.loading-overlay');
+    module = angular.module('awelzijn.loadingoverlay');
   } catch (e) {
-    module = angular.module('awelzijn.loading-overlay', []);
+    module = angular.module('awelzijn.loadingoverlay', []);
   }
   module.directive('aWelzijnLoadingOverlay', [function () {
     return {

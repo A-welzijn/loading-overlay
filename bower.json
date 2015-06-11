@@ -1,6 +1,6 @@
 {
   "name": "awelzijn-loading-overlay",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": [
     "dist/awelzijn-loading-overlay.js"
   ],
