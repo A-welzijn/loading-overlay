@@ -1,7 +1,7 @@
 {
   "name": "awelzijn-loading-overlay",
   "description": "Directive to display a loading indicator over a component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git@github.com:tinkkit/loading-overlay.git"
