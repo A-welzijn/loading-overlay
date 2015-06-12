@@ -1,6 +1,6 @@
-# A-Welzijn Panel en Panel fields
+# A-Welzijn Loading Overlay
 
-v1.0.5
+v1.0.6
 
 ### Hoe het eruit ziet
 
@@ -29,6 +29,8 @@ v1.0.5
 	</table>
 </div>
 ```
+
+Deze directive gaat een overlay genereren die getoond wordt als het `loading`-attribuut true is.
 
 Deze directive is ook ingebouwd in het de [panel](https://github.com/A-welzijn/panel)-directive en gebruik je zo:
 
