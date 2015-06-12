@@ -12,12 +12,17 @@
         loading: "="
       },
       link: function (scope, element, attrs) {
+        var div = document.createElement('div');
+        div.appendChild(element[0]);
+        
         element[0].parentNode.classList.add("position-relative");
 
         var overlay = document.createElement("div");
         overlay.classList.add("loading-overlay");
         overlay.innerHTML = '<i class="fa fa-refresh fa-spin"></i>';
         element[0].parentNode.insertBefore(overlay, element[0]);
+        
+        element[0].parentNode.replaceChild(div, element[0]); 
 
         scope.$watch("loading", function (value) {
           if (scope.loading) {
