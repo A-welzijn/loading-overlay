@@ -21,10 +21,8 @@
 
         scope.$watch("loading", function (value) {
           if (scope.loading) {
-            element[0].style.display = 'none';
             overlay.style.display = 'block';
           } else {
-            element[0].style.display = 'block';
             overlay.style.display = 'none';
           }
         });

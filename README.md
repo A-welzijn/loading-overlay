@@ -1,38 +1,45 @@
-# Tink skeleton Angular directive
+# A-Welzijn Panel en Panel fields
 
-v1.0.4
+v1.0.5
 
-## What is this repository for?
+### Hoe het eruit ziet
 
-The Tink Angular skeleton provides a scaffold for a directive or service that can easily work with Tink.
+![Screenshot](https://s3.amazonaws.com/f.cl.ly/items/3E0j2y2G1F01421M431p/table.PNG)
+![Screenshot](https://s3.amazonaws.com/f.cl.ly/items/0A1Y0T1S1T0V2l1b2t17/tableloading.PNG)
 
-Tink is an in-house developed easy-to-use front end framework for quick prototyping and simple deployment of all kinds of websites and apps, keeping a uniform and consistent look and feel.
+### Hoe het te gebruiken
 
-## Setup
+```html
+<div class="col-lg-12">
+	<table a-welzijn-loading-overlay loading="ctrl.loading">
+		<thead>
+			<tr>
+				<th>Naam</th>
+				<th>Leeftijd</th>
+				<th>Geslacht</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="persoon in ctrl.personen track by $index">
+				<td>{{persoon.naam}}</td>
+				<td>{{persoon.geboortedatum | leeftijd}}</td>
+				<td>{{persoon.geslachtscode | geslacht}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+```
 
-### Prerequisites
+Deze directive is ook ingebouwd in het de [panel](https://github.com/A-welzijn/panel)-directive en gebruik je zo:
 
-* nodeJS [http://nodejs.org/download/](http://nodejs.org/download/)
-* bower: `npm install -g bower`
-
-### Install
-
-1. Go to the root of your project and type the following command in your terminal:
-   `bower install tink-back-to-top-angular --save`
-
-2. Include `dist/tink-back-to-top-angular.js` and its necessary dependencies in your project.
-
-3. On http://tink.digipolis.be you will find all necessary documentation.
-
-## Contribution guidelines
-
-* If you're not sure, drop us a note
-* Fork this repo
-* Do your thing
-* Create a pull request
-
-## Who do I talk to?
-
-* Jasper Van Proeyen - jasper.vanproeyen@digipolis.be - Lead front-end
-* Tom Wuyts - tom.wuyts@digipolis.be - Lead UX
-* [The hand](https://www.youtube.com/watch?v=_O-QqC9yM28)
+```html
+<a-welzijn-panel title="Testje" loading="ctrl.loading">
+    <div class="panel-body-heading">
+        Jawadde dadde
+    </div>
+    <div class="row">
+        <p>Random tekst.</p>
+    </div>
+</a-welzijn-panel>
+```
+![Screenshot](https://s3.amazonaws.com/f.cl.ly/items/0t3N0C1N0g0G2u1H261v/panelloading.PNG)
