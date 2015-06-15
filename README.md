@@ -1,6 +1,6 @@
 # A-Welzijn Loading Overlay
 
-v1.0.7
+v1.0.8
 
 ### Hoe het eruit ziet
 
@@ -8,6 +8,17 @@ v1.0.7
 ![Screenshot](https://s3.amazonaws.com/f.cl.ly/items/0A1Y0T1S1T0V2l1b2t17/tableloading.PNG)
 
 ### Hoe het te gebruiken
+
+```javascript
+"dependencies": {
+	"awelzijn-loading-overlay": "latest"
+ }
+```
+```javascript
+var app = angular.module('yourApp', [
+	'awelzijn.loadingoverlay'
+]);
+```
 
 ```html
 <div class="col-lg-12">
