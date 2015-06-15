@@ -1,6 +1,6 @@
 # A-Welzijn Loading Overlay
 
-v1.0.8
+v1.0.9
 
 ### Hoe het eruit ziet
 

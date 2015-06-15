@@ -5,7 +5,7 @@
   } catch (e) {
     module = angular.module('awelzijn.loadingoverlay', []);
   }
-  module.directive('AWelzijnLoadingOverlay', [function () {
+  module.directive('aWelzijnLoadingOverlay', [function () {
     return {
       restrict: 'A',
       scope: {
