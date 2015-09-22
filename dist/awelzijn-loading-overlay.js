@@ -16,7 +16,7 @@
 
         var overlay = document.createElement("div");
         overlay.classList.add("loading-overlay");
-        overlay.innerHTML = '<i class="fa fa-refresh fa-spin"></i>';
+        overlay.innerHTML = '<div class="loader" />';
         element[0].parentNode.insertBefore(overlay, element[0]);
 
         scope.$watch("loading", function (value) {
