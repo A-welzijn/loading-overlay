@@ -21,3 +21,6 @@
 
 .position-relative {
   position: relative; }
+
+.loading-overlay .loader {
+  top: 50%; }
