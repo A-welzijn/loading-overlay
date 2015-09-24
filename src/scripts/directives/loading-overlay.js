@@ -22,10 +22,11 @@
         scope.$watch("loading", function (value) {
           if (scope.loading) {
             overlay.style.display = 'block';
+            wrap[0].classList.add('min-height');
           } else {
             overlay.style.display = 'none';
+            wrap[0].classList.remove('min-height');
           }
-          wrap[0].classList.toggle('min-height');
         });
       }
     };
