@@ -25,7 +25,7 @@
           } else {
             overlay.style.display = 'none';
           }
-          wrap.classList.toggle('min-height');
+          wrap[0].classList.toggle('min-height');
         });
       }
     };
