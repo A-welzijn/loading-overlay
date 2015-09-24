@@ -13,11 +13,11 @@
       },
       link: function (scope, element, attrs) {
         angular.element(element[0]).wrap("<div class='position-relative loader-wrap'></div>");
-
+        var wrap = angular.element(element[0].parentNode);
         var overlay = document.createElement("div");
         overlay.classList.add("loading-overlay");
         overlay.innerHTML = '<div class="loader" />';
-        element[0].parentNode.insertBefore(overlay, element[0]);
+        wrap.insertBefore(overlay, element[0]);
 
         scope.$watch("loading", function (value) {
           if (scope.loading) {
@@ -25,7 +25,7 @@
           } else {
             overlay.style.display = 'none';
           }
-          $(".loader-wrap").toggleClass('min-height');
+          wrap.classList.toggle('min-height');
         });
       }
     };
