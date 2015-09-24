@@ -12,7 +12,7 @@
         loading: "="
       },
       link: function (scope, element, attrs) {
-        angular.element(element[0]).wrap("<div class='position-relative'></div>");
+        angular.element(element[0]).wrap("<div class='position-relative loader-wrap'></div>");
 
         var overlay = document.createElement("div");
         overlay.classList.add("loading-overlay");
@@ -25,6 +25,7 @@
           } else {
             overlay.style.display = 'none';
           }
+          $(".loader-wrap").toggleClass('min-height');
         });
       }
     };

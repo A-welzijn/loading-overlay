@@ -21,7 +21,9 @@
   transform: translateY(-50%); }
 
 .position-relative {
-  position: relative;
+  position: relative; }
+
+.min-height {
   min-height: 90px; }
 
 .loading-overlay .loader {
