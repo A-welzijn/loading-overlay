@@ -17,7 +17,7 @@
         var overlay = document.createElement("div");
         overlay.classList.add("loading-overlay");
         overlay.innerHTML = '<div class="loader" />';
-        wrap.insertBefore(overlay, element[0]);
+        wrap[0].insertBefore(overlay, element[0]);
 
         scope.$watch("loading", function (value) {
           if (scope.loading) {
